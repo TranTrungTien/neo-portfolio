@@ -6,6 +6,8 @@
   "homepage": "https://TranTrungTien.github.io/neo-portfolio/",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -dir dist",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
